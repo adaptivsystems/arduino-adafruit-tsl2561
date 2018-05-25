@@ -174,7 +174,7 @@ uint32_t TSL2561::calculateLux(uint16_t ch0, uint16_t ch1) {
       {b=TSL2561_LUX_B8C; m=TSL2561_LUX_M8C;}
 #else
     unsigned long z = 0ul;
-    if ((ratio >= (unsigned long)0) && (ratio <= TSL2561_LUX_K1T)) {
+    if ((ratio >= z) && (ratio <= TSL2561_LUX_K1T)) {
         b = TSL2561_LUX_B1T;
         m = TSL2561_LUX_M1T;
     }
